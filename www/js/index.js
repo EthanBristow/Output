@@ -1,12 +1,14 @@
 $(document).on("pagecreate", "#pageone", function() {
-  $('#OutputButton').on("click", function() {
+  $("#OutputButton").on("click", function() {
     var R = random();
-      $("#text").innerHTML = R
+    $(this).text("Random value: " + R);
   });            
 });            
 
 
+
 function random() {
+    //alert("Test");
 	return !Math.round(Math.random());
 }
 
