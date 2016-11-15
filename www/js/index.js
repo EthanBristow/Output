@@ -1,13 +1,13 @@
 $(document).on("pagecreate", "#pageone", function() {
   $('#OutputButton').on("click", function() {
-    random();
+    var R = random();
+      $("#text").innerHTML = R
   });            
 });            
 
 
 function random() {
 	return !Math.round(Math.random());
-    $("#text")
 }
 
 
